@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "scroll-horizon",
+  "version": "0.0.1",
+  "permissions": ["activeTab"],
+
+  "description": "Adds a red bottom border at https-pages.",
+
+  "icons": {
+    "512": "icons/horizon-512.png",
+    "64": "icons/horizon-64.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["horizon.js"]
+    }
+  ]
+}
